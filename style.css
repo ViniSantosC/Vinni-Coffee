@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  color: #ffffff;
+}
+
+.logo {
+  font-family: "Clicker Script", cursive;
+  font-size: 3rem;
+  font-weight: 300;
+}
+.h_meio {
+  font-family: "Playfair Display", serif;
+}
+.link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: inline-block;
+  font-weight: 100;
+  margin: auto 1rem;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.link:hover {
+         text-shadow: 
+        0px 6px 15px rgba(248, 182, 97, 0.7),
+        0px 15px 35px rgba(248, 182, 97, 0.6),
+        0px 30px 70px rgba(248, 182, 97, 0.4);
+     transform: translateY(-5px) scale(1.1);
+     
+}
+.link2 {
+  font-size: 1.2rem;
+  margin: auto 1rem;
+  color: #ffffff;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.link2:hover {
+    color: #f9c06a;
+         text-shadow: 
+        0px 6px 15px rgba(248, 182, 97, 0.7),
+        0px 15px 35px rgba(248, 182, 97, 0.6),
+        0px 30px 70px rgba(248, 182, 97, 0.4);
+     transform: translateY(-5px) scale(1.1);
+     
+}
+
+.link3 {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  color: #1e1e1e;
+  margin: auto 1rem;
+  background-color: #f9c06a;
+     box-shadow: 0px 10px 30px rgba(248, 182, 97, 0.5);
+  border-radius: 2rem;
+  transition: 0.3s ease-in-out;
+  display: inline-block;
+}
+.link3:hover {
+      transform: translateY(-2px);
+    box-shadow: 0px 15px 35px rgba(248, 182, 97, 0.7);
+}
+.h_final {
+  font-family: "Playfair Display", serif;
+}
+.inicial {
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.9) 20%,
+      rgba(0, 0, 0, 0.4) 60%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("img/coffee_image.png");
+  width: 100%;
+  padding: 15rem 8rem;
+  color: #ffffff;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  background-position: center;
+  background-attachment: fixed;
+}
+.titulo {
+      font-family: "Clicker Script", cursive;
+  font-size: 18rem;
+  font-weight: 200;
+}
+.t1 {
+     font-family: "Playfair Display", serif;
+      font-weight: 100;
+}
+.t2 {
+     font-family: "Playfair Display", serif;
+      font-weight: 100;
+}
+.compre{
+     text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  color: #1e1e1e;
+display: block;
+width: 12rem;
+   box-shadow: 0px 10px 30px rgba(248, 182, 97, 0.5);
+margin: 2rem ;
+text-align: center;
+  background-color: #f9c06a;
+  border-radius: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.compre:hover {
+      transform: translateY(-2px);
+      
+    box-shadow: 0px 15px 35px rgba(248, 182, 97, 0.7);
+}
+.parte2 {
+    display: flex;
+    padding: 2rem;
+    height: 90vh;
+    justify-content: space-around;
+
+    img{
+     height: 60%;
+    }
+
+    a{
+      text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  width: 50%;
+  text-align: center;
+  color: #1e1e1e;
+display: inline-block;
+  background-color: #f9c06a;
+     box-shadow: 0px 10px 30px rgba(248, 182, 97, 0.5);
+  border-radius: 2rem; 
+  transition: all 0.3s ease-in-out; 
+    }
+    a:hover {
+      text-shadow: 
+        0px 6px 15px rgba(248, 182, 97, 0.7),
+        0px 15px 35px rgba(248, 182, 97, 0.6),
+        0px 30px 70px rgba(248, 182, 97, 0.4);
+     transform: translateY(-5px) scale(1.1);
+     
+     
+}
+}
+
+.titulo2 {
+    color: #603809;
+    font-size: 4rem;
+    margin: 1rem auto;
+    font-family: "Playfair Display", serif;
+    
+}
+.sub {
+      font-family: "Playfair Display", serif;
+    color: #707070;
+    font-weight: 200;
+      line-height: 1.6;
+      margin: 1rem auto;
+}
+.parte2t {
+    width: 50%;
+}
+@media (max-width:700px) {
+  .h_meio {
+    display: none;
+  }  
+  .inicialt{
+    max-width: 70%;
+    padding-right: 1rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .inicial {
+    padding: 13rem 1rem;
+    max-width: 100%;
+    background-attachment: none;
+  }
+  .titulo{
+    font-size: 3rem;
+  }
+  .t1 {
+    font-size: 0.6rem;
+    line-height: 1.5;
+  }
+
+  .t2 {
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+
+  }
+  .h_final {
+    display: none;
+  }
+}
+@media (max-width:1200px) {
+.h_meio {
+    display: none;
+}
+.titulo {
+    font-size: 7rem;
+}
+.t1,.t2 {
+    font-size: 1rem;
+}
+.compre {
+    width: 18rem;
+}
+.h_final {
+    display: none;
+}
+}
