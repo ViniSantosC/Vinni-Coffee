@@ -11,9 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="esquerda">
@@ -25,7 +28,7 @@
         <span>voce por aqui</span>
       </h1>
       <hr />
-      <p class="sub2">Seu proximo cafe favorito estar ter esperando.</p>
+      <p class="sub2">Seu próximo café favorito está te esperando.</p>
 
       <div class="flex">
         <img
@@ -38,15 +41,17 @@
     <div class="direita">
       <div class="flex2">
         <div>
-          <a href="">Voltar a loja</a>
+          <a class="voltar" href="../Inicial/index.html">
+            <img src="../img/seta-esquerda.png" alt="" />Voltar a loja</a
+          >
         </div>
-        <div>
+        <div class="flex3">
           <p>cafe . pessoas . Brasil</p>
           <hr />
         </div>
       </div>
       <div class="EntrarCadastrar">
-        <button class="Entrar">Entrar</button> 
+        <button class="Entrar">Entrar</button>
         <button class="Cadastrar">Criar conta</button>
       </div>
       <div class="acessediv">
@@ -54,27 +59,32 @@
         <h2 class="acessetext">Continue sua jornada com a VinniCoffee.</h2>
       </div>
       <div class="informacoes">
-        <label for="email">E-mail</label>
-        <input id="email" type="email" />
+        <label  for="email">E-mail</label>
+        <input class="email" placeholder="Seu@email.com" id="email" type="email" />
+
+        <br />
         <label for="email">Senha</label>
-        <input id="email" type="password" />
-        
+        <input class="senha" id="email" placeholder="....." type="password" />
       </div>
-      <div class="">
-          <input type="checkbox" name="lembre-me" id="lembra" /><label
-            for="lembra">Lembre-me
-            </label
-          >
-          <a href="">Esqueci a senha</a>
+      <div class="check">
+        <div>
+          <label class="checkbox-container">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            <span class="lembre">Lembre-me</span> 
+          </label>
         </div>
-      
-      
-      <div>
-        <button>Entrar</button>
+        <a class="esqueci" href="">Esqueci a senha</a>
       </div>
-      <div>
-        <p>Ainda não tem conta?<a href="">Criar conta</a></p>
-      </div>
+
+     
+        <button class="entrar">Entrar</button>
+      
+        
+     
+   
+        <p class="não">Para sua segurança, conheça as <a href="../termos/termos.html">Condições de uso</a></p>
+      
     </div>
   </body>
 </html>

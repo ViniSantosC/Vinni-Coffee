@@ -86,7 +86,7 @@
       rgba(0, 0, 0, 0.4) 60%,
       rgba(0, 0, 0, 0.1) 100%
     ),
-    url("img/coffee_image.png");
+    url("../img/coffee_image.png");
   width: 100%;
   padding: 15rem 8rem;
   color: #ffffff;
@@ -349,7 +349,7 @@
 
 .parte5 {
   background-image:
-    linear-gradient(rgba(96, 57, 2, 0.7)), url("img/Rectangle 14.png");
+    linear-gradient(rgba(96, 57, 2, 0.7)), url("../img/Rectangle\ 14.png");
   width: 100%;
   height: 80vh;
   background-repeat: no-repeat;
@@ -411,7 +411,7 @@
 footer {
   background-image:
     linear-gradient(to bottom, #623b04c4 0%, #602c0459 50%, #854a06a1 100%),
-    url("img/fotter_image.png");
+    url("../img/fotter_image.png");
   width: 100%;
   padding: 4rem 2rem;
 
