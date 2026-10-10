@@ -4,82 +4,120 @@
   padding: 0;
 }
 body {
-    display: flex;
+  display: flex;
 }
 
 .esquerda {
   width: 50%;
-background-image: url("../img/coffee_image.png");
-background-repeat: no-repeat;
-background-size: cover;
+  background-image: url("../img/coffee_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-color: white;
-height: 100vh;
-padding: 2rem;
+  color: white;
+  height: 100vh;
+  padding: 2rem;
 }
 .logo {
   font-family: "Clicker Script", cursive;
   font-size: 6rem;
-font-weight: 700;
-width: 50%;
-  color: #8d510d;
-  border-bottom: 1px solid #b96a0f;
+  font-weight: 700;
+  width: 50%;
+  color: #c18d4f;
+  border-bottom: 1px solid #c18d4f;
 }
 
 .sub {
-    font-size: 2rem;
-        font-family: "Poppins", serif;
+  font-size: 2rem;
+  font-family: "Poppins", serif;
   font-weight: 200;
-     color: #b96a0f;
+  color: #c18d4f;
 }
 .sub1 {
-   margin-top: 4rem;
-     color: white;
+  margin-top: 4rem;
+  color: white;
   font-size: 5rem;
   margin: 1rem auto;
   font-family: "Playfair Display", serif;
-  span{
+  span {
     color: #d4aa79;
   }
 }
-hr{
+.voltar {
+  color: #643813;
+  text-decoration: none;
+  font-family: "poppins";
+  gap: 1rem;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  img {
+    height: 15px;
+    display: inline-block;
+    margin: 0rem 1rem;
+    transition: all 0.3s ease;
+  }
+}
+.voltar:hover {
+  color: #8f501c;
+}
+.voltar:hover img {
+  transform: scale(1.1) translatex(-5px);
+}
+
+.flex3 {
+  display: flex;
+  width: 30%;
+  gap: 1rem;
+  align-items: center;
+  p {
+    color: #643813;
+    font-family: "poppins";
+    font-size: 1.2rem;
+  }
+  hr {
+    border-radius: 0;
+    height: 1px;
+
+    border-color: #643813;
+  }
+}
+hr {
   border: #e07e0d 2px solid;
   width: 10%;
   border-radius: 1rem;
-    
 }
 .sub2 {
-    font-size: 1.5rem;
-    font-family: "poppins", Helvetica, sans-serif;
-    width: 50%;
+  font-size: 1.5rem;
+  font-family: "poppins", Helvetica, sans-serif;
+  width: 50%;
 }
 .flex {
-    margin-top: 10rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-    img{
-        height: 3rem;
-    }
-    p{
-        font-size: 1.2rem;
-          font-family: "poppins", serif;
-    }
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  img {
+    height: 3rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-family: "poppins", serif;
+  }
 }
-.direita{
+.direita {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 50%;
-  padding: 2rem;
+  padding: 1rem;
   background-color: #fdf7f0;
   gap: 3rem;
 }
 .flex2 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .EntrarCadastrar {
@@ -91,40 +129,49 @@ hr{
   height: 7%;
   padding: 0.4rem;
   border-radius: 5rem;
-  .Entrar, .Cadastrar {
-    font-size: 1.3rem;
-    font-weight: 700;
-    font-weight: bold;
-    color: #e9e0db;
-    font-family: "Playfair Display", serif;
-  }
-  .Entrar {
-    background-color: #5b3419;
-    height: 100%;
-    width: 50%;
-    border-radius: 5rem;
-    border: none;
-  }
-  .Cadastrar {
-    background-color: #f0e4da;
-    color: #5b3419;
-    height: 100%;
-    width: 50%;
-    border-radius: 5rem;
-    border: none;
-  }
 }
-
+.Entrar,
+.Cadastrar {
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fefefd;
+  font-family: "Playfair Display", serif;
+}
+.Entrar {
+  background-color: #5b3419;
+  height: 100%;
+  width: 50%;
+  border-radius: 5rem;
+  border: none;
+}
+.Cadastrar {
+  background-color: #f0e4da;
+  color: #5b3419;
+  height: 100%;
+  width: 50%;
+  border-radius: 5rem;
+  border: none;
+  transition: all 0.3s ease;
+}
+.Cadastrar:hover {
+  background-color: #5b3419;
+  color: #fefefd;
+}
 .acessediv {
   display: flex;
   align-items: center;
   flex-direction: column;
   .acessetitulo {
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #1b0000;
+    font-style: italic;
   }
   .acessetext {
     font-family: "Google Sans", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #835c48;
     font-weight: 100;
   }
@@ -132,14 +179,124 @@ hr{
 
 .informacoes {
   display: flex;
-  align-items: center;
   flex-direction: column;
   width: 70%;
   gap: 0.6rem;
   label {
-
+    font-family: "poppins";
+    font-size: 1.2rem;
   }
   input {
-    width: 80%;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: #e8e7e8 solid 1px;
+    padding: 1rem;
+    padding-left: 50px;
+    font-size: 1.2rem;
+  }
+}
+.lembre {
+  color: #1b0000;
+  font-family: "poppins";
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.senha {
+  background-image: url("../img/cadeado.png");
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 25px;
+}
+.email {
+  background-image: url("../img/enviar.png");
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 25px;
+}
+.esqueci {
+  color: #4e1e06;
+  font-family: "poppins";
+  transition: all 0.3s ease;
+}
+.esqueci:hover {
+  transform: translateX(-5px);
+  color: #a67237;
+}
+.check {
+  width: 70%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.checkbox-container input {
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #643813;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.checkbox-container:hover .custom-checkbox {
+  background-color: #f5ece4;
+}
+
+.checkbox-container input:checked + .custom-checkbox {
+  background-color: #643813;
+  border-color: #643813;
+}
+
+.checkbox-container input:checked + .custom-checkbox::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.entrar {
+  width: 70%;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #a67237;
+  color: #e8e7e8;
+  transition: all 0.3s ease;
+}
+.entrar:hover {
+  transform: translateY(-5px);
+  background-color: #5b3419;
+}
+
+.não {
+  color: #4e1e06;
+  font-family: "poppins";
+  font-size: 1.1rem;
+
+  a {
+    margin-left: 1rem;
+    color: #1b0000;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  a:hover {
+    transform: translatex(5px);
+    color: #5b3419;
   }
 }
