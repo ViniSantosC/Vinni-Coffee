@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="../img/logotipo.png" type="image/png" />
+    <link rel="stylesheet" href="../carrinho/carrinho.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div><h1 class="logo">VinniCoffee</h1></div>
+      <div class="meio">
+        <a href="inicio">Inicio</a><a href="">Loja</a><a href="">Contato</a>
+      </div>
+      <div class="fim">
+        <a href=""><img src="../img/carrinho.png" alt="" /></a
+        ><a class="entrar" href="../login/login.html">Entrar</a>
+      </div>
+    </header>
+    <main>
+      <div class="direita">
+        <section class="primeira">
+          <p>cafes que conectam</p>
+          <h1>Seu carrinho</h1>
+          <h2>Cafes que tornam o seu dia mais especial.</h2>
+        </section>
+        <section class="segunda">
+          <h2>produto</h2>
+          <div class="segun">
+            <h2>preço</h2>
+            <h2>Quantidade</h2>
+            <h2>Total</h2>
+          </div>
+        </section>
+        <div class="produto">
+            <div class="flex">
+          <img src="../img/Rectangle 7.png" alt="" />
+           <div>
+            <h1>capucio</h1>
+            <p>descrição</p>
+            <h1>200g</h1>
+        </div>
+          </div>
+          <div class="flex2">
+          <h1>R$10.00</h1>
+          <div class="seletor-quantidade">
+            <button
+              type="button"
+              class="btn-menos"
+              onclick="mudarQuantidade(-1)"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              id="quantidade"
+              value="1"
+              min="1"
+              max="99"
+              readonly
+            />
+            <button type="button" class="btn-mais" onclick="mudarQuantidade(1)">
+              +
+            </button>
+          </div>
+          <div class="flex">
+          <h1>R$?</h1>
+          <button class="lixo"><img src="../img/lata-de-lixo.png" alt=""></button></div>
+          </div>
+        </div>
+         <div class="produto">
+            <div class="flex">
+          <img src="../img/Rectangle 7.png" alt="" />
+           <div>
+            <h1>capucio</h1>
+            <p>descrição</p>
+            <h1>200g</h1>
+        </div>
+          </div>
+          <div class="flex2">
+          <h1>R$10.00</h1>
+          <div class="seletor-quantidade">
+            <button
+              type="button"
+              class="btn-menos"
+              onclick="mudarQuantidade(-1)"
+            >
+              -
+            </button>
+            <input
+              type="number"
+              id="quantidade"
+              value="1"
+              min="1"
+              max="99"
+              readonly
+            />
+            <button type="button" class="btn-mais" onclick="mudarQuantidade(1)">
+              +
+            </button>
+          </div>
+          <div class="flex">
+          <h1>R$?</h1>
+          <button class="lixo"><img src="../img/lata-de-lixo.png" alt=""></button></div>
+          </div>
+        </div>
+      </div>
+      <div class="esquerda">
+       <div class="carros"><div></div><div class="carro"><img src="../img/carrinho-de-compras.png" alt=""></div><div></div> <hr> <div class="carro"><img src="../img/camiao.png" alt=""></div><hr><div class="carro" ><img src="../img/cartao-de-credito.png" alt=""></div></div>
+       <h1>Resumo do pedido</h1>
+       <div class="flex10"><p>Subtotal</p> <h2>R$00.00</h2></div>
+       <div class="flex10"><p>Entregar</p> <h2>checar no checkout</h2></div>
+       <h2>Cupon de desconto</h2>
+       <div class="flex"><input type="text"><button class="aplica">Aplicar</button></div>
+       <div class="flex10"><h2>Total</h2><h2>R$00.00</h2></div>
+       <button class="finaliza" >Finalizar compra</button>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h1 class="logo">VinniCoffee</h1>
+      </div>
+      <div>
+        <div class="flex5">
+          <div class="flex4">
+            <img src="../img/github.png" alt="" /><img
+              src="../img/whatsapp.png"
+              alt=""
+            /><img src="../img/instagram.png" alt="" />
+          </div>
+          <hr />
+          <h2>
+            CAFE FAZ <br />
+            TUDO MELHOR
+          </h2>
+        </div>
+      </div>
+    </footer>
+    <script src="../carrinho/script.js"></script>
+  </body>
+</html>
