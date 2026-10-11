@@ -1,251 +1,342 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
 .esquerda {
   width: 50%;
+  height: 100vh;
+  padding: 2rem;
   background-image: url("../img/coffee_image.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: white;
-  height: 100vh;
-  padding: 2rem;
 }
+
 .logo {
+  width: 50%;
+  border-bottom: 1px solid #c18d4f;
+  color: #c18d4f;
   font-family: "Clicker Script", cursive;
   font-size: 6rem;
   font-weight: 700;
-  width: 50%;
-  color: #c18d4f;
-  border-bottom: 1px solid #c18d4f;
 }
 
 .sub {
-  font-size: 2rem;
-  font-family: "Poppins", serif;
-  font-weight: 200;
   color: #c18d4f;
+  font-family: "Poppins", serif;
+  font-size: 2rem;
+  font-weight: 200;
 }
+
 .sub1 {
-  margin-top: 4rem;
-  color: white;
-  font-size: 5rem;
   margin: 1rem auto;
+  color: white;
   font-family: "Playfair Display", serif;
-  span {
-    color: #d4aa79;
-  }
+  font-size: 5rem;
 }
-.voltar {
-  color: #643813;
-  text-decoration: none;
-  font-family: "poppins";
+
+.sub1 span {
+  color: #d4aa79;
+}
+
+.sub2 {
+  width: 50%;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
   gap: 1rem;
-  font-size: 1.2rem;
-  display: inline-block;
-  transition: all 0.3s ease;
-  img {
-    height: 15px;
-    display: inline-block;
-    margin: 0rem 1rem;
-    transition: all 0.3s ease;
-  }
+  margin-top: 10rem;
+  text-align: center;
 }
+
+.flex img {
+  height: 3rem;
+}
+
+.flex p {
+  font-family: "Poppins", serif;
+  font-size: 1.2rem;
+}
+
+
+.direita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  width: 50%;
+  height: 100vh;
+  padding: 1rem;
+
+  background-color: #fdf7f0;
+  overflow-y: auto;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: #643813;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.voltar img {
+  height: 15px;
+  transition: transform 0.3s ease;
+}
+
 .voltar:hover {
   color: #8f501c;
 }
+
 .voltar:hover img {
-  transform: scale(1.1) translatex(-5px);
+  transform: translateX(-5px);
 }
 
 .flex3 {
   display: flex;
-  width: 30%;
-  gap: 1rem;
   align-items: center;
-  p {
-    color: #643813;
-    font-family: "poppins";
-    font-size: 1.2rem;
-  }
-  hr {
-    border-radius: 0;
-    height: 1px;
-
-    border-color: #643813;
-  }
+  gap: 1rem;
+  width: 30%;
 }
+
+.flex3 p {
+  color: #643813;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
 hr {
-  border: #e07e0d 2px solid;
   width: 10%;
+  border: 2px solid #e07e0d;
   border-radius: 1rem;
 }
-.sub2 {
-  font-size: 1.5rem;
-  font-family: "poppins", Helvetica, sans-serif;
-  width: 50%;
-}
-.flex {
-  margin-top: 10rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-align: center;
-  img {
-    height: 3rem;
-  }
-  p {
-    font-size: 1.2rem;
-    font-family: "poppins", serif;
-  }
-}
-.direita {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 50%;
-  padding: 1rem;
-  background-color: #fdf7f0;
-  gap: 3rem;
-}
-.flex2 {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+
+.flex3 hr {
+  height: 1px;
+  border-color: #643813;
 }
 
 .EntrarCadastrar {
+  position: relative;
+  isolation: isolate;
+
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #f0e4da;
+
   width: 50%;
-  height: 7%;
-  padding: 0.4rem;
-  border-radius: 5rem;
+  min-height: 3.5rem;
+  padding: 4px;
+
+  background-color: #f0e4da;
+  border-radius: 50px;
 }
-.Entrar,
-.Cadastrar {
-  font-size: 1.3rem;
-  font-weight: 700;
-  cursor: pointer;
-  font-weight: bold;
-  color: #fefefd;
-  font-family: "Playfair Display", serif;
-}
-.Entrar {
+
+
+.slider {
+  position: absolute;
+  z-index: -1;
+  top: 4px;
+  left: 4px;
+
+  width: calc(50% - 4px);
+  height: calc(100% - 8px);
+
   background-color: #5b3419;
-  height: 100%;
-  width: 50%;
-  border-radius: 5rem;
-  border: none;
+  border-radius: 50px;
+
+  transform: translateX(0);
+  transition: transform 0.3s ease;
 }
-.Cadastrar {
-  background-color: #f0e4da;
+
+
+.EntrarCadastrar.cadastro-ativo .slider {
+  transform: translateX(100%);
+}
+
+
+.EntrarCadastrar button {
+  position: relative;
+  z-index: 1;
+
+  flex: 1;
+  width: 50%;
+  min-width: 0;
+  height: 100%;
+  padding: 0.7rem 0.3rem;
+
+  border: none;
+  border-radius: 50px;
+  background: transparent;
+
   color: #5b3419;
-  height: 100%;
-  width: 50%;
-  border-radius: 5rem;
-  border: none;
-  transition: all 0.3s ease;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
-.Cadastrar:hover {
-  background-color: #5b3419;
+
+.EntrarCadastrar button.ativo {
   color: #fefefd;
 }
+
+
+#conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  width: 100%;
+  flex-shrink: 0;
+}
+
+
 .acessediv {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  .acessetitulo {
-    font-size: 4rem;
-    font-weight: 600;
-    color: #1b0000;
-    font-style: italic;
-  }
-  .acessetext {
-    font-family: "Google Sans", sans-serif;
-    font-size: 1.3rem;
-    color: #835c48;
-    font-weight: 100;
-  }
+  align-items: center;
+  width: 100%;
+  text-align: center;
 }
+
+.acessediv .acessetitulo {
+  color: #1b0000;
+  font-size: 4rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.acessediv .acessetext {
+  color: #835c48;
+  font-family: "Google Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
 
 .informacoes {
   display: flex;
   flex-direction: column;
-  width: 70%;
   gap: 0.6rem;
-  label {
-    font-family: "poppins";
-    font-size: 1.2rem;
-  }
-  input {
-    width: 100%;
-    border-radius: 0.5rem;
-    border: #e8e7e8 solid 1px;
-    padding: 1rem;
-    padding-left: 50px;
-    font-size: 1.2rem;
-  }
+
+  width: 70%;
 }
-.lembre {
-  color: #1b0000;
-  font-family: "poppins";
-  font-size: 1.1rem;
-  font-weight: 400;
+
+.informacoes label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
 }
-.senha {
-  background-image: url("../img/cadeado.png");
-  background-repeat: no-repeat;
-  background-position: 12px center;
-  background-size: 25px;
+
+.informacoes input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 50px;
+
+  border: 1px solid #e8e7e8;
+  border-radius: 0.5rem;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
 }
+
 .email {
   background-image: url("../img/enviar.png");
   background-repeat: no-repeat;
   background-position: 12px center;
   background-size: 25px;
 }
+
+.senha {
+  background-image: url("../img/cadeado.png");
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  background-size: 25px;
+}
+
+
+.check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  width: 70%;
+}
+
+.lembre {
+  color: #1b0000;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
 .esqueci {
   color: #4e1e06;
-  font-family: "poppins";
-  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s ease;
 }
+
 .esqueci:hover {
-  transform: translateX(-5px);
   color: #a67237;
 }
-.check {
-  width: 70%;
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
+
+.checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .checkbox-container input {
-  appearance: none;
-  -webkit-appearance: none;
   position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
 }
 
 .custom-checkbox {
+  position: relative;
+
   display: inline-block;
+  flex-shrink: 0;
+
   width: 22px;
   height: 22px;
+  margin-right: 8px;
+
   border: 2px solid #643813;
   border-radius: 4px;
+
   cursor: pointer;
-  position: relative;
-  transition: all 0.2s ease;
-  vertical-align: middle;
-  margin-right: 8px;
+  transition: background-color 0.2s ease;
 }
 
 .checkbox-container:hover .custom-checkbox {
@@ -258,45 +349,137 @@ hr {
 }
 
 .checkbox-container input:checked + .custom-checkbox::after {
-  content: "";
   position: absolute;
-  left: 7px;
   top: 3px;
+  left: 7px;
+
   width: 5px;
   height: 10px;
+
   border: solid white;
   border-width: 0 2px 2px 0;
+
+  content: "";
   transform: rotate(45deg);
 }
+
+.checkbox-container input:focus-visible + .custom-checkbox {
+  outline: 2px solid #a67237;
+  outline-offset: 3px;
+}
+
 
 .entrar {
   width: 70%;
   padding: 0.8rem;
-  font-size: 1.5rem;
-  border-radius: 0.5rem;
+
   border: none;
+  border-radius: 0.5rem;
+
   background-color: #a67237;
   color: #e8e7e8;
-  transition: all 0.3s ease;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
+
 .entrar:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   background-color: #5b3419;
 }
 
+
 .não {
   color: #4e1e06;
-  font-family: "poppins";
+  font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
+  text-align: center;
+}
 
-  a {
-    margin-left: 1rem;
-    color: #1b0000;
-    display: inline-block;
-    transition: all 0.3s ease;
+.não a {
+  display: inline-block;
+  margin-left: 0.5rem;
+
+  color: #1b0000;
+  transition: color 0.3s ease;
+}
+
+.não a:hover {
+  color: #5b3419;
+}
+
+@media (max-width: 1100px) {
+  .logo {
+    width: 100%;
+    font-size: 4rem;
   }
-  a:hover {
-    transform: translatex(5px);
-    color: #5b3419;
+
+  .sub1 {
+    font-size: 3.5rem;
+  }
+
+  .acessediv .acessetitulo {
+    font-size: 3rem;
+  }
+
+  .EntrarCadastrar {
+    width: 70%;
+  }
+
+  .flex3 {
+    width: auto;
+  }
+
+  .flex3 p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .esquerda {
+    display: none;
+  }
+
+  .direita {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    gap: 2rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .EntrarCadastrar {
+    width: 90%;
+  }
+
+  #conteudo {
+    gap: 1.5rem;
+  }
+
+  .acessediv .acessetitulo {
+    font-size: 2.5rem;
+  }
+
+  .acessediv .acessetext {
+    font-size: 1rem;
+  }
+
+  .informacoes,
+  .check,
+  .entrar {
+    width: 90%;
+  }
+
+  .flex3 {
+    display: none;
   }
 }
