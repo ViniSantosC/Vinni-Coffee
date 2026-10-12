@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar pedido | VinniCoffee</title>
+
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">VinniCoffee</h1>
+        <a href="../cartalago/catalago.html">Continuar comprando</a>
+    </header>
+
+    <main class="checkout" id="checkout-conteudo">
+        <h1>Finalizar pedido</h1>
+        <p>Confira seus produtos e preencha os dados.</p>
+
+        <section class="resumo">
+            <h2>Seu pedido</h2>
+            <div id="resumo-produtos"></div>
+
+            <div class="linha">
+                <span>Subtotal</span>
+                <strong id="subtotal">R$ 0,00</strong>
+            </div>
+
+            <div class="linha">
+                <span>Entrega</span>
+                <strong id="frete">R$ 0,00</strong>
+            </div>
+
+            <div class="linha total">
+                <span>Total</span>
+                <strong id="total">R$ 0,00</strong>
+            </div>
+        </section>
+
+        <form id="form-checkout">
+            <h2>Seus dados</h2>
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <h2>Recebimento</h2>
+
+            <label for="tipoEntrega">Como deseja receber?</label>
+            <select id="tipoEntrega" name="tipoEntrega" required>
+                <option value="">Selecione uma opção</option>
+                <option value="retirada">Retirar no local — grátis</option>
+                <option value="entrega">Receber em casa</option>
+            </select>
+
+            <div id="campo-endereco" hidden>
+                <label for="endereco">Endereço de entrega</label>
+                <input
+                    type="text"
+                    id="endereco"
+                    name="endereco"
+                    placeholder="Rua, número, bairro e cidade"
+                >
+            </div>
+
+            <h2>Forma de pagamento</h2>
+
+            <label for="pagamento">Como deseja pagar?</label>
+            <select id="pagamento" name="pagamento" required>
+                <option value="">Selecione uma opção</option>
+                <option value="pix">Pix</option>
+                <option value="cartao">Cartão no recebimento</option>
+                <option value="dinheiro">Dinheiro no recebimento</option>
+            </select>
+
+            <button type="submit" id="confirmar-pedido">
+                Confirmar pedido
+            </button>
+        </form>
+    </main>
+
+    <script src="./checkout.js"></script>
+</body>
+</html>
