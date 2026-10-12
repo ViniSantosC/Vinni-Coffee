@@ -38,6 +38,10 @@ font-weight: 700;
         font-family: "poppins";
         text-decoration: none;
         color: black;
+        transition: all 0.3s ease;
+}
+.entrar:hover {
+    transform: translateY(-5px) scale(1.1);
 }
 main {
     display: flex;

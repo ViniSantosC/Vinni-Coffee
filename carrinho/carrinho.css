@@ -325,6 +325,10 @@ footer {
   gap: 1rem;
   img {
     height: 40px;
+    transition: all 0.3s ease;
+  }
+  img:hover {
+    transform: translateY(-5px) scale(1.1);
   }
 }
 .flex5 {
