@@ -1,0 +1,120 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #3d2b20;
+    background: #faf7f2;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 7%;
+    background: #fff;
+}
+
+.logo {
+    margin: 0;
+    font-family: "Clicker Script", cursive;
+}
+
+a {
+    color: #754c30;
+}
+
+.checkout {
+    width: min(700px, 92%);
+    margin: 40px auto;
+    padding: 28px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgb(0 0 0 / 6%);
+}
+
+.checkout h1,
+.checkout h2 {
+    margin-top: 0;
+}
+
+.resumo {
+    margin: 24px 0;
+    padding: 20px;
+    border: 1px solid #e5ddd5;
+    border-radius: 8px;
+}
+
+.produto-resumo,
+.linha {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 10px 0;
+}
+
+.linha {
+    border-top: 1px solid #e5ddd5;
+}
+
+.total {
+    font-size: 1.15rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form h2 {
+    margin: 18px 0 4px;
+}
+
+form label {
+    font-size: 0.95rem;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d8ccc0;
+    border-radius: 6px;
+    background: white;
+    font: inherit;
+}
+
+#confirmar-pedido {
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #68452f;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+#confirmar-pedido:hover {
+    background: #503321;
+}
+
+#confirmar-pedido:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+    .checkout {
+        padding: 18px;
+    }
+
+    header {
+        padding: 16px 4%;
+    }
+}

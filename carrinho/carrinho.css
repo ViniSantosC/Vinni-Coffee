@@ -347,3 +347,169 @@ footer {
     flex-shrink: 0;
   }
 }
+
+/* Produtos carregados dinamicamente no carrinho */
+.direita > .produto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0;
+    border-bottom: 1px solid #ded6ce;
+}
+
+/* Imagem e informações do produto */
+.direita > .produto > .flex {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    min-width: 0;
+}
+
+.direita > .produto > .flex > img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.direita > .produto > .flex > div {
+    min-width: 0;
+}
+
+.direita > .produto > .flex h1 {
+    margin: 5px 0;
+}
+
+.direita > .produto > .flex p {
+    margin: 5px 0;
+    overflow-wrap: anywhere;
+}
+
+/* Preço, quantidade e total */
+.direita > .produto > .flex2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.direita > .produto > .flex2 > h1 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Seletor de quantidade */
+.seletor-quantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.seletor-quantidade button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #c8b8a8;
+    border-radius: 6px;
+    background: transparent;
+    color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.seletor-quantidade input {
+    width: 35px;
+    padding: 5px 0;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: center;
+}
+
+/* Total individual e botão de remover */
+.direita > .produto > .flex2 > .flex {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.direita > .produto > .flex2 > .flex h1 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+button.lixo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+button.lixo img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* Mensagem para carrinho vazio */
+.carrinho-vazio {
+    padding: 30px 0;
+    text-align: center;
+    color: #76685c;
+    font-size: 16px;
+}
+
+/* Adaptação para telas menores */
+@media (max-width: 800px) {
+    .direita > .produto {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .direita > .produto > .flex2 {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .direita > .produto > .flex2 > .flex {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .direita > .produto > .flex > img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .direita > .produto > .flex2 {
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .direita > .produto > .flex2 > h1 {
+        font-size: 16px;
+    }
+
+    .seletor-quantidade {
+        gap: 5px;
+    }
+
+    .seletor-quantidade button {
+        width: 28px;
+        height: 28px;
+    }
+}

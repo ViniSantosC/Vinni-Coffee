@@ -17,7 +17,7 @@
     <header>
       <div><h1 class="logo">VinniCoffee</h1></div>
       <div class="meio">
-        <a href="inicio">Inicio</a><a href="">Loja</a><a href="">Contato</a>
+        <a href="../interface/interface.html">interface</a><a href="../cartalago/catalago.html">Loja</a><a href="">Contato</a>
       </div>
       <div class="fim">
         <a href=""><img src="../img/carrinho.png" alt="" /></a
@@ -39,78 +39,7 @@
             <h2>Total</h2>
           </div>
         </section>
-        <div class="produto">
-            <div class="flex">
-          <img src="../img/Rectangle 7.png" alt="" />
-           <div>
-            <h1>capucio</h1>
-            <p>descrição</p>
-            <h1>200g</h1>
-        </div>
-          </div>
-          <div class="flex2">
-          <h1>R$10.00</h1>
-          <div class="seletor-quantidade">
-            <button
-              type="button"
-              class="btn-menos"
-              onclick="mudarQuantidade(-1)"
-            >
-              -
-            </button>
-            <input
-              type="number"
-              id="quantidade"
-              value="1"
-              min="1"
-              max="99"
-              readonly
-            />
-            <button type="button" class="btn-mais" onclick="mudarQuantidade(1)">
-              +
-            </button>
-          </div>
-          <div class="flex">
-          <h1>R$?</h1>
-          <button class="lixo"><img src="../img/lata-de-lixo.png" alt=""></button></div>
-          </div>
-        </div>
-         <div class="produto">
-            <div class="flex">
-          <img src="../img/Rectangle 7.png" alt="" />
-           <div>
-            <h1>capucio</h1>
-            <p>descrição</p>
-            <h1>200g</h1>
-        </div>
-          </div>
-          <div class="flex2">
-          <h1>R$10.00</h1>
-          <div class="seletor-quantidade">
-            <button
-              type="button"
-              class="btn-menos"
-              onclick="mudarQuantidade(-1)"
-            >
-              -
-            </button>
-            <input
-              type="number"
-              id="quantidade"
-              value="1"
-              min="1"
-              max="99"
-              readonly
-            />
-            <button type="button" class="btn-mais" onclick="mudarQuantidade(1)">
-              +
-            </button>
-          </div>
-          <div class="flex">
-          <h1>R$?</h1>
-          <button class="lixo"><img src="../img/lata-de-lixo.png" alt=""></button></div>
-          </div>
-        </div>
+
       </div>
       <div class="esquerda">
        <div class="carros"><div></div><div class="carro"><img src="../img/carrinho-de-compras.png" alt=""></div><div></div> <hr> <div class="carro"><img src="../img/camiao.png" alt=""></div><hr><div class="carro" ><img src="../img/cartao-de-credito.png" alt=""></div></div>
@@ -120,7 +49,7 @@
        <h2>Cupon de desconto</h2>
        <div class="flex"><input type="text"><button class="aplica">Aplicar</button></div>
        <div class="flex10"><h2>Total</h2><h2>R$00.00</h2></div>
-       <button class="finaliza" >Finalizar compra</button>
+       <button class="finaliza" id="finalizarPedido" type="button">Finalizar compra</button>
       </div>
     </main>
     <footer>

@@ -330,3 +330,6 @@ footer {
     flex-shrink: 0;
   }
 }
+.produto[hidden] {
+    display: none !important;
+}
