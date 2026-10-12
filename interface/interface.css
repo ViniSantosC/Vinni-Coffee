@@ -127,6 +127,10 @@ header {
       margin: 0rem 0.5rem;
       transition: all 0.3s ease;
     }
+    a{
+      text-decoration: none;
+      color: #66380c;
+    }
   }
 
   button:hover {
@@ -260,6 +264,10 @@ footer {
   gap: 1rem;
   img {
     height: 40px;
+    transition: all 0.3s ease;
+  }
+  img:hover {
+    transform: translateY(-5px) scale(1.1);
   }
 }
 .flex5 {
