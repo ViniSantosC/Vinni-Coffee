@@ -51,40 +51,55 @@
         </div>
       </div>
       <div class="EntrarCadastrar">
-        <button class="Entrar">Entrar</button>
-        <button class="Cadastrar">Criar conta</button>
-      </div>
-      <div class="acessediv">
-        <h1 class="acessetitulo">Acesse sua conta</h1>
-        <h2 class="acessetext">Continue sua jornada com a VinniCoffee.</h2>
-      </div>
-      <div class="informacoes">
-        <label  for="email">E-mail</label>
-        <input class="email" placeholder="Seu@email.com" id="email" type="email" />
+        <div class="slider"></div>
 
-        <br />
-        <label for="email">Senha</label>
-        <input class="senha" id="email" placeholder="....." type="password" />
+        <button type="button" class="Entrar ativo" id="btnEntrar">
+          Entrar
+        </button>
+
+        <button type="button" class="Cadastrar" id="btnCadastrar">
+          Criar conta
+        </button>
       </div>
-      <div class="check">
-        <div>
-          <label class="checkbox-container">
-            <input type="checkbox" />
-            <span class="custom-checkbox"></span>
-            <span class="lembre">Lembre-me</span> 
-          </label>
+
+      <div id="conteudo">
+        <div class="acessediv">
+          <h1 class="acessetitulo">Acesse sua conta</h1>
+          <h2 class="acessetext">Continue sua jornada com a VinniCoffee.</h2>
         </div>
-        <a class="esqueci" href="">Esqueci a senha</a>
+        <form id="logar" class="informacoes">
+          <label for="email">E-mail</label>
+          <input
+            class="email"
+            name="email"
+            placeholder="Seu@email.com"
+            id="email"
+            type="email"
+          />
+          <br />
+          <label for="senha">Senha</label>
+          <input
+            class="senha"
+            id="senha"
+            name="senha"
+            placeholder="Digite sua senha"
+            type="password"
+          />
+          <button type="submit" id="enviar" class="entrar">Entrar</button>
+        </form>
+        <div class="check">
+          <label class="checkbox-container">
+            <input type="checkbox" /> <span class="custom-checkbox"></span>
+            <span class="lembre">Lembre-me</span>
+          </label>
+          <a class="esqueci" href="#">Esqueci a senha</a>
+        </div>
+        <p class="não">
+          Para sua segurança, conheça as
+          <a href="../termos/termos.html">Condições de uso</a>
+        </p>
       </div>
-
-     
-        <button class="entrar">Entrar</button>
-      
-        
-     
-   
-        <p class="não">Para sua segurança, conheça as <a href="../termos/termos.html">Condições de uso</a></p>
-      
     </div>
+    <script src="login.js"></script>
   </body>
 </html>
