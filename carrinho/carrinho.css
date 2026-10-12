@@ -90,10 +90,17 @@ main {
     display: flex;
 }
 
-   
+   body{
+      background-color: #fdfaf6; /* Tom off-white/creme caloroso */
+    color: #332211; /* Garante que os textos fiquem em um marrom bem escuro, quase preto */
+   }
 
 .direita{
     width: 60%;
+        background-color: #ffffff; /* Mantém os produtos no branco para dar contraste */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(111, 78, 55, 0.05); /* Sombra bem leve com tom de café */
 } 
 .segunda {
     padding: 1rem;
@@ -274,6 +281,10 @@ main {
     border-radius: 1rem;
      box-shadow: 0 10px 30px rgba(27, 15, 4, 0.05); 
     padding: 3rem;
+    background-color: #f5ebe0; /* Um bege ligeiramente mais escuro que o fundo */
+    border: 1px solid #e6ccb2; /* Borda sutil para dar acabamento */
+    border-radius: 16px;
+    padding: 30px;
     gap: 2rem;
     input{
         width:80%;
@@ -325,6 +336,10 @@ footer {
   gap: 1rem;
   img {
     height: 40px;
+    transition: all 0.3s ease;
+  }
+  img:hover {
+    transform: translateY(-5px) scale(1.1);
   }
 }
 .flex5 {
